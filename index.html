@@ -1,51 +1,72 @@
-<code>
+<!DOCTYPE html>
+<script>
+	// This function loads the content of a given URL into the container element
+function loadContent(url) {
+    $("#content").load(url, function() {
+        // This callback function runs after the content is loaded
+        console.log("Content loaded from " + url);
+    });
+}
+
+// This function updates the URL of the browser using the history API
+function updateURL(url) {
+    // The first argument is the state object, which can store any data you want
+    // The second argument is the title, which is currently ignored by most browsers
+    // The third argument is the URL, which will be displayed in the address bar
+    history.pushState({url: url}, "", url);
+}
+
+// This function handles the popstate event, which is triggered when the user clicks the back or forward button of the browser
+function handlePopstate(event) {
+    // The event object has a state property, which contains the data we stored in the history API
+    // We can use this data to load the content of the previous or next page
+    var url = event.state.url;
+    loadContent(url);
+}
+
+// This event listener runs when the window object is loaded
+$(window).on("load", function() {
+    // We load the default page of our website, which is the home page
+    loadContent("home.html");
+});
+
+// This event listener runs when the user clicks on any link or button that has a href attribute
+$("a[href]").on("click", function(event) {
+    // We prevent the default behavior of the link or button, which is to load the href attribute as a new page
+    event.preventDefault();
+    // We get the value of the href attribute, which is the URL of the page we want to load
+    var url = $(this).attr("href");
+    // We load the content of the page into the container element
+    loadContent(url);
+    // We update the URL of the browser using the history API
+    updateURL(url);
+});
+
+// This event listener runs when the user clicks the back or forward button of the browser
+$(window).on("popstate", function(event) {
+    // We handle the popstate event using the function we created
+    handlePopstate(event);
+});
+
+</script>
 <html>
-<title>Adtech Contracting</title>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="Carouselstyle.css">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-
-<!-- Navigation bar -->
-<div class="navbar">
-<a href="Home.html">Home</a>
-<a href="Services0.html">Our Services</a>
-<a href="About_Us.html">About Us</a>
-<a href="Contact_Us.html">Contact Us</a>
-</div>
-
-<!-- Image or banner -->
-<div class="banner"></div>
-
-<!-- About us section -->
-<div class="about">
-<h2>Who We Are</h2>
-<p>Adtech Contracting Pty Ltd is a leading telecommunications contracting company based in Bendigo, Victoria.
-We provide end-to-end solutions for telecommunications infrastructure and equipment, including the NBN network, developer pit and pipe work, and carrier licensing.<br>
-We serve clients across Victoria and parts of Southern New South Wales, delivering high-quality products and standards that set us apart from the rest.
-With 17 years of experience and a team of about 25 staff members, we are an owner-operated company that can handle any project from start to finish.<br>
-Adtech Contracting is your trusted partner for all your telecommunications needs. </p>
-</div>
-
-<div class="image-container"> <img src="test1.jpg" alt="test"> <p class="titlez">Our Success Story</p> <p class="paragraphz">We are a leading company in the field of advertising technology. We offer innovative solutions for your marketing needs.</p> </div>
-
-<div class="about">
-<h2>Services</h2>
-</div>
-<!-- Services section -->
-
-<div class="slideshow">
-		<form>
-				<input type="radio" name="fancy" value="1" id="1" />
-				<input type="radio" name="fancy" value="2" id="2" />
-				<input type="radio" name="fancy" value="3" id="3" />
-				<input type="radio" name="fancy" value="4" id="4" />			
-				<input type="radio" name="fancy" value="5" id="5" />
-				<label for="1">Pit & Pipe</label><label for="2">Trenching</label><label for="3">Cable installations</label><label for="4">Boring</label>
-				<div class="keys">Use left and right keys to navigate</div>
-		</form>
-</div>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About_Us.html">About</a></li>
+		<li><a href="Services0.html">About</a></li>
+            <li><a href="Contact_Us.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <!-- This is where the dynamic content will be loaded -->
+    </div>
 </body>
 </html>
-</code>
