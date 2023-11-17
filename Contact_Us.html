@@ -1,0 +1,97 @@
+<code>
+<html>
+<title>Adtech Contracting</title>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<script>
+
+//https://danielpuiatti.com/creating-a-contact-email-form-with-html-css-and-javascript-a-comprehensive-guide-for-improved-accessibility-and-seo/
+function validateForm() {
+    var name = document.forms["contactForm"]["name"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var message = document.forms["contactForm"]["message"].value;
+    var error = "";
+
+    if (name == "") {
+        error += "Please enter your name.\n";
+    }
+
+    if (email == "") {
+        error += "Please enter your email address.\n";
+    } else if (!validateEmail(email)) {
+        error += "Please enter a valid email address.\n";
+    }
+
+    if (message == "") {
+        error += "Please enter a message.\n";
+    }
+
+    if (error != "") {
+        alert(error);
+        return false;
+    }
+}
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
+
+</script>
+
+<body>
+
+<!-- Navigation bar -->
+<div class="navbar">
+<a href="Home.html">Home</a>
+<a href="Services0.html">Our Services</a>
+<a href="About_Us.html">About Us</a>
+<a href="Contact_Us.html">Contact Us</a>
+</div>
+
+<!-- About us section -->
+<div class="about">
+<h2>Contact Us</h2>
+</div>
+
+<div class="contactGrid">
+  <a class="contactGrid-item">
+		<h2>Get in touch with us</h2>
+		<p>We are always happy to hear from you. Whether you have a question, a suggestion, or a complaint, we will do our best to assist you. You can contact us by phone, email, or using the form on this page. </p>
+		<div class="image-container"> <img src="test2.jpg" alt="test"> </div>
+  </a>
+  <a class="contactGrid-item">
+		<h2>Contact form</h2>
+		<p>We are always happy to hear from you. Whether you have a question, a suggestion, or a complaint, we will do our best to assist you. You can contact us by phone, email, or using the form on this page. </p>
+		<form action="SendEmail.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Send">
+		</form>
+
+	
+	
+  </a>
+</div>
+
+<div class="about">
+<h2>Careers</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lorem quis leo tincidunt consequat. Quisque vitae nisi quis augue ultrices tincidunt. Morbi id leo vitae nisl sagittis aliquet. Fusce euismod lorem ut eros fringilla, in vulputate leo lacinia.</p>
+</div>
+
+
+</body>
+</html>
+
+</code>

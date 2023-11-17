@@ -1,0 +1,53 @@
+:root { 
+	--button: #3A86B7;
+	--button-hover: #07639F;
+	--background: #F4F4F4;
+	--background2: #89B7D5;
+	--textB: black;
+	--textW: #C0C0C0;
+	--white: #C0C0C0;
+	--bannerBackground: #231F20;
+	--CarouselBG1: #1B78B4;
+	--CarouselBG2: #3A86B7;
+	--red: #F25F5C;
+}
+
+/*:root { 
+	--button: #034078;
+	--button-hover: #0a1128;
+	--background: #e3f2fd;
+	--background2: #C04848;
+	--textB: #0a1128;
+	--textW: #fefcfb;
+	--white: #fefcfb;
+	--bannerBackground: #231F20;
+	--CarouselBG1: #001f54;
+	--CarouselBG2: #034078;
+	--red: red;
+}*/
+
+
+
+
+/*:root { 
+	--button: #00a0ff;
+	--button-hover: #555;
+	--background: #333;
+	--textB: black;
+	--textW: white;
+	--white: white;
+	--bannerBackground: #ccc;
+	--CarouselBG1: #444;
+	--CarouselBG2: #cc0000;
+}*/
+
+
+/*
+ #3A86B7, #FFFFFF, #000000, and #C0C0C0.
+
+07639F
+1B78B4
+3A86B7
+5A99C2
+89B7D5
+*/

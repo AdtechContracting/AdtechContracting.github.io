@@ -1,0 +1,351 @@
+@import url("colour.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add the viewport meta tag */
+head {
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
+
+ body {
+	 background-color: var(--background);
+	 /*background-image: url("FibreOptics.jpg");
+	 background-size: 100vw auto;
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;*/
+ }
+ 
+/* Navigation bar */
+.navbar {
+  display: flex;
+  align-items: stretch;				/*make the buttons have the same height as the navbar*/
+  justify-content: space-between; 	/*distribute the buttons evenly*/
+  background-color: var(--button);
+  color: var(--white);
+  height: 5vw;
+}
+
+
+.navbar a {
+	color: var(--textW);
+	text-decoration: none;
+	width: 25vw;
+	padding: 0px; 					/* reduce the padding */ 
+	display: flex; 
+	align-items: center; 			/* center the text vertically */ 
+	justify-content: center; 		/* center the text horizontally */
+	font-size: 0.9vw;
+}
+
+.navbar a:hover {
+  background-color: var(--button-hover);
+}
+
+/* Image or banner */
+.banner {
+  width: 100%;
+  height: 50vw;
+  background-image: url(AdtechImage.png); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-color: var(--bannerBackground);
+}
+
+/* About us section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5vw;
+}
+
+.about h2 {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1vw;
+  width: 80%;
+  text-align: center;
+}
+
+/* our story story */
+.centreImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.centreImage img {
+  width: 30vw;
+  /*height: 200px;*/
+}
+
+.grid {
+	margin: 0% 20%; /* Add a margin of 10px on the left and right sides of the grid */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, auto);
+	align-content: center;
+	grid-gap: 5vw 5vw;
+}
+
+.grid-item {
+	/*display: block;*/
+	position: relative;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.grid-item:hover img {
+  opacity: 0.5;
+}
+
+/* Style the image container */
+.grid-container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* Style the image */
+.grid-container img {
+	 max-width: 100%;
+	 height: auto;
+	 object-fit: cover; 
+}
+
+/* Style the title */
+.grid-container p.titlez {
+	position: absolute;
+	top: 0.5vw;
+	left: 0;
+	right: 0;
+	color: var(--textB);
+	font-size: 10vw
+	font-weight: bold;
+	text-align: center;
+}
+
+.grid-container:hover p.titlez {
+	color: var(--textW);
+}
+
+
+.contactGrid {
+	margin: 0% 20%; /* Add a margin of 10px on the left and right sides of the grid */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, auto);
+	align-content: center;
+	grid-gap: 5vw 5vw;
+}
+
+.contactGrid-item {
+	/*display: block;*/
+	position: relative;
+}
+
+.contactGrid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.contactGrid-item h2 {
+	font-size: 2vw;
+	text-align: center;
+}
+
+.contactGrid-item p {
+	font-size: 1vw;
+	text-align: left;
+}
+
+
+
+
+/* Style the image container */
+.image-container {
+	position: relative;
+	width: 30vw;
+	height: auto;
+	margin: 0 auto;
+	display: flex; /* Use display flex */
+	justify-content: center; /* Align items to center */
+	overflow: hidden; /* Clip any overflowing content */
+}
+
+/* Style the image */
+.image-container img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover; 
+	align-items: center;
+}
+
+/* Style the title */
+.image-container p.titlez {
+	position: absolute;
+	top: 0.5vw;
+	left: 0;
+	right: 0;
+	color: var(--textB);
+	font-size: 2vw;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Style the paragraph */
+.image-container p.paragraphz {
+	position: absolute;
+	bottom: 30vw;
+	left: 0;
+	right: 0;
+	color: var(--textB);
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Add media queries for different screen sizes */
+@media (max-width: 600px) {
+  /* For mobile devices, stack the navbar items vertically */
+  .navbar {
+    flex-direction: column;
+	height: 25vw;
+  }
+  .navbar a {
+	width: 100vw;
+	font-size: 2vw;
+	padding: 10px;
+  }
+  .banner {
+    height: 25vw;
+	background-size: 50% auto;
+  }
+  .about h2 {
+    font-size: 5vw;
+  }
+  .about p {
+    font-size: 2.5vw;
+  }
+  .grid {
+	margin: 0% 10%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .image-container {
+    width: 80vw;
+  }
+    .image-container p.titlez {
+	top: 0.5vw;
+	font-size: 6vw;
+	}
+
+.image-container p.paragraphz {
+	bottom: 1vw;
+	font-size: 3vw;
+	}
+	
+	  .contactGrid {
+	margin: 0% 10%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 601px) {
+  /* For desktop devices, keep the navbar items horizontally */
+  .navbar {
+    flex-direction: row;
+	
+  }
+  
+  .navbar a {
+	width: 25vw;
+	font-size: 0.9vw;
+	padding: 0px;
+  }
+
+  .banner {
+    height: 20vw;
+	background-size: auto 100%;
+  }
+  .about h2 {
+    font-size: 2vw;
+  }
+
+  .about p {
+    font-size: 1vw;
+  }
+  .grid {
+	margin: 0% 20%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-container {
+    width: 30vw;
+  }
+  
+  .image-container p.titlez {
+	top: 0.5vw;
+	font-size: 2vw;
+	}
+
+	.image-container p.paragraphz {
+	bottom: 1vw;
+	font-size: 1vw;
+	}
+	
+	.contactGrid {
+	margin: 0% 20%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--textB);
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: var(--button);
+    color: var(--white);;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--button-hover);
+}
