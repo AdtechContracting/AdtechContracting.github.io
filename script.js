@@ -29,7 +29,8 @@ $(window).on("load", function() {
 });
 
 // This event listener runs when the user clicks on any link or button that has a href attribute
-$("a[href]").on("click", function(event) {
+//$("a[href]").on("click", function(event) {
+function onClickEvent() {
     // We prevent the default behavior of the link or button, which is to load the href attribute as a new page
     event.preventDefault();
     // We get the value of the href attribute, which is the URL of the page we want to load
