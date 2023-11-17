@@ -39,7 +39,7 @@ function onClickEvent() {
     loadContent(url);
     // We update the URL of the browser using the history API
     updateURL(url);
-});
+}
 
 // This event listener runs when the user clicks the back or forward button of the browser
 $(window).on("popstate", function(event) {
