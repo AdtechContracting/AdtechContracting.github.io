@@ -18,7 +18,7 @@ function updateURL(url) {
 function handlePopstate(event) {
     // The event object has a state property, which contains the data we stored in the history API
     // We can use this data to load the content of the previous or next page
-    var url = event.state.url;
+    var url = concat(event.state.url,"html");
     loadContent(url);
 }
 
