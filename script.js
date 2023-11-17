@@ -1,11 +1,11 @@
 	// This function loads the content of a given URL into the container element
 function loadContent(url) {
-    $("#content").load(concat(url,".html"), function() {
+    $("#content").load(url, function() {
         // This callback function runs after the content is loaded
         console.log("Content loaded from " + url);
     });
 }
-
+//concat(url,".html")
 // This function updates the URL of the browser using the history API
 function updateURL(url) {
     // The first argument is the state object, which can store any data you want
@@ -25,7 +25,7 @@ function handlePopstate(event) {
 // This event listener runs when the window object is loaded
 $(window).on("load", function() {
     // We load the default page of our website, which is the home page
-    loadContent("home");
+    loadContent("home.html");
 });
 
 // This event listener runs when the user clicks on any link or button that has a href attribute
@@ -34,7 +34,7 @@ $("a[href]").on("click", function(event) {
     // We prevent the default behavior of the link or button, which is to load the href attribute as a new page
     event.preventDefault();
     // We get the value of the href attribute, which is the URL of the page we want to load
-    var url = $(this).attr("id");
+    var url = concat($(this).attr("id"),"html");
     // We load the content of the page into the container element
     loadContent(url);
     // We update the URL of the browser using the history API
