@@ -25,7 +25,7 @@ function handlePopstate(event) {
 // This event listener runs when the window object is loaded
 $(window).on("load", function() {
     // We load the default page of our website, which is the home page
-    loadContent("Home.html");
+    loadContent("home.html");
 });
 
 // This event listener runs when the user clicks on any link or button that has a href attribute
