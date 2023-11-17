@@ -44,5 +44,5 @@ $("a[href]").on("click", function(event) {
 // This event listener runs when the user clicks the back or forward button of the browser
 $(window).on("popstate", function(event) {
     // We handle the popstate event using the function we created
-    handlePopstate(event);
+    //handlePopstate(event);
 });
