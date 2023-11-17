@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 	// Set the recipient, subject, and content of the email to be sent
-	$recipient = "youremail@example.com"; // The email address where the contact form submissions will be sent
+	$recipient = "liam.plant@adtechcontracting.com.au"; // The email address where the contact form submissions will be sent
 	$subject = "New Contact Form Submission"; // The subject line of the email
 	$email_content = "Name: $name\n"; // The name of the sender
 	$email_content .= "Email: $email\n\n"; // The email address of the sender
