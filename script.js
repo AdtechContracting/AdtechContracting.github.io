@@ -32,6 +32,7 @@ $(window).on("load", function() {
 $("a[href]").on("click", function(event) {
 //function onClickEvent($"a[href]") {
     // We prevent the default behavior of the link or button, which is to load the href attribute as a new page
+	loadContent("About_Us.html");
     event.preventDefault();
     // We get the value of the href attribute, which is the URL of the page we want to load
     var url = $(this).attr("href");
