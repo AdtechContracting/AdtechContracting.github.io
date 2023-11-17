@@ -30,7 +30,7 @@ label{
 	background: var(--CarouselBG1);
 	background-size: cover;
 	font-size: 24px;
-	background-image: url("test1.jpg");
+	background-image: url("FibreOptics3.jpg");
 	background-position: top; /* Align the image to the top */
 	background-repeat: no-repeat;
 	background-size: 100% auto;
@@ -103,7 +103,7 @@ label[for="2"],
 label[for="4"] {
 /*label[calc(attr(for)%2=0)] {*/
 	background: var(--CarouselBG2);
-	background-image: url("test2.jpg");
+	background-image: url("Success.jpg");
 	background-position: top; /* Align the image to the top */
 	background-repeat: no-repeat;
 	background-size: 100% auto;
