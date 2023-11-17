@@ -18,7 +18,7 @@ function updateURL(url) {
 function handlePopstate(event) {
     // The event object has a state property, which contains the data we stored in the history API
     // We can use this data to load the content of the previous or next page
-    var url = concat(event.state.url,"html");
+    var url = event.state.url.concat("html");
     loadContent(url);
 }
 
@@ -34,7 +34,7 @@ $("a[href]").on("click", function(event) {
     // We prevent the default behavior of the link or button, which is to load the href attribute as a new page
     event.preventDefault();
     // We get the value of the href attribute, which is the URL of the page we want to load
-    var url = concat($(this).attr("id"),"html");
+    var url = $(this).attr("id").concat("html");
     // We load the content of the page into the container element
     loadContent(url);
     // We update the URL of the browser using the history API
