@@ -8,11 +8,12 @@
 }
 
 .slideshow h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .slideshow img {
-  width: 300px;
-  /*height: 200px;*/
+	width: 100%;
+	height: 25vw;
+	object-fit: cover;
 }
 
 label{
@@ -29,7 +30,7 @@ label{
 	
 	background: var(--CarouselBG1);
 	background-size: cover;
-	font-size: 24px;
+	font-size: 2rem;
 	background-image: url("FibreOptics3.jpg");
 	background-position: top; /* Align the image to the top */
 	background-repeat: no-repeat;
@@ -38,7 +39,7 @@ label{
 
 form {
 	width: 100%;
-	height: 400px;
+	height: 25vw;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -69,9 +70,7 @@ input:focus ~ .keys {
 
 input:nth-of-type(1):checked ~ label:nth-of-type(1), 
 input:nth-of-type(2):checked ~ label:nth-of-type(2),
-input:nth-of-type(3):checked ~ label:nth-of-type(3),
-input:nth-of-type(4):checked ~ label:nth-of-type(4),
-input:nth-of-type(5):checked ~ label:nth-of-type(5){
+input:nth-of-type(3):checked ~ label:nth-of-type(3){
    z-index: 0;	/* Select the label elements that are siblings of the input elements that are checked, and match their order (first, second, third, or fourth), and set their z-index to 0 */
 }
 
@@ -87,20 +86,7 @@ input:nth-of-type(3):checked ~ label {
 	transform: translate3d(-200%, 0, 0);
 }
 
-input:nth-of-type(4):checked ~ label {
-	transform: translate3d(-300%, 0, 0);
-}
-
-input:nth-of-type(5):checked ~ label {
-	transform: translate3d(-400%, 0, 0);
-}
-
-input:nth-of-type(6):checked ~ label {
-	transform: translate3d(0, 0, 0);	/* Set its transform property to translate3d(0, 0, 0), which means no translation */ 
-}
-
-label[for="2"],
-label[for="4"] {
+label[for="2"]{
 /*label[calc(attr(for)%2=0)] {*/
 	background: var(--CarouselBG2);
 	background-image: url("Success.jpg");
