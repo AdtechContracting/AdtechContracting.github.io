@@ -35,6 +35,7 @@ html{
 .navbar a {
 	color: var(--textW);
 	text-decoration: none;
+	padding: 0rem;
 	display: flex; 
 	align-items: center; 			/* center the text vertically */ 
 	justify-content: center; 		/* center the text horizontally */
@@ -203,6 +204,46 @@ html{
 	text-align: center;
 }
 
+
+form {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--textB);
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: var(--button);
+    color: var(--white);;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--button-hover);
+}
+
+
 /* Add media queries for different screen sizes */
 @media (min-width: 320px) {
   /* For mobile devices, stack the navbar items vertically */
@@ -213,7 +254,7 @@ html{
   .navbar a {
 	width: 100vw;
 	font-size: 0.9rem;
-	padding: 0.1;
+	height: 7.5vw;
   }
   .banner {
     height: 25vw;
@@ -269,7 +310,7 @@ html{
   .navbar a {
 	width: 25vw;
 	font-size: 0.9rem;
-	padding: 0px;
+	height: 5vw;
   }
 
   .banner {
@@ -320,41 +361,3 @@ html{
 }
 }
 
-
-form {
-    width: 400px;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--textB);
-    border-radius: 5px;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-input[type="submit"] {
-    background-color: var(--button);
-    color: var(--white);;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: var(--button-hover);
-}
