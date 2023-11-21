@@ -48,10 +48,11 @@ html{
 /* Image or banner */
 .banner {
   width: 100%;
-  background-image: url(AdtechImage.png); 
+  background-image: url(AdtechLogo.jpg);  
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--bannerBackground);
+  background-size: 100% auto;
+  /*background-color: var(--bannerBackground);*/
 }
 
 /* About us section */
@@ -253,18 +254,17 @@ input[type="submit"]:hover {
   }
   .navbar a {
 	width: 100vw;
-	font-size: 0.9rem;
+	font-size: 1.8rem;
 	height: 7.5vw;
   }
   .banner {
     height: 25vw;
-	background-size: 50% auto;
   }
   .about h2 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   .about p {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   .grid {
 	margin: 0% 10%;
@@ -275,12 +275,12 @@ input[type="submit"]:hover {
   }
 	.image-container p.titlez {
 	top: 0.5vw;
-	font-size: 1.9rem;
+	font-size: 3.8rem;
 	}
 
 .image-container p.paragraphz {
 	bottom: 1vw;
-	font-size: 0.9rem;
+	font-size: 1.8rem;
 	}
 	
 	  .contactGrid {
@@ -288,14 +288,14 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(1, 1fr);
   }
   .contactGrid-item h2 {
-	font-size: 1.9rem;
+	font-size: 3.8rem;
 }
 
 .contactGrid-item p {
-	font-size: 0.9rem;
+	font-size: 1.8rem;
 }
 .contactGrid-item label {
-	font-size: 1rem;
+	font-size: 2rem;
 	font-weight: bold;
 }
 }
@@ -315,7 +315,6 @@ input[type="submit"]:hover {
 
   .banner {
     height: 20vw;
-	background-size: auto 100%;
   }
   .about h2 {
     font-size: 2rem;
