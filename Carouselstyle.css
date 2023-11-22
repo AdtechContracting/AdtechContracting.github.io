@@ -88,7 +88,7 @@ label[for="2"]{
 /*label[calc(attr(for)%2=0)] {*/
 	background: var(--CarouselBG2);
 	background-image: url("fish.png");
-	background-size: 100% cover;
+	background-size: cover 100%;
 	font-size: 2rem;
 	background-position: center center; /* Align the image to the center */
 	background-repeat: no-repeat;
@@ -98,7 +98,7 @@ label[for="3"]{
 /*label[calc(attr(for)%2=0)] {*/
 	background: var(--CarouselBG2);
 	background-image: url("site.png");
-	background-size: 100% cover;
+	background-size: cover 100%;
 	font-size: 2rem;
 	background-position: center center; /* Align the image to the center */
 	background-repeat: no-repeat;
