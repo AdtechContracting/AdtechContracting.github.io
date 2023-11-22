@@ -32,7 +32,7 @@ label{
 	background-size: 100% auto;
 	font-size: 2rem;
 	background-image: url("bigdrill2.png");
-	background-position: center; /* Align the image to the center  */
+	background-position: center center;/* Align the image to the center  */
 	background-repeat: no-repeat;
 }
 
@@ -90,7 +90,7 @@ label[for="2"]{
 	background-image: url("fish.png");
 	background-size: 100% auto;
 	font-size: 2rem;
-	background-position: center /* Align the image to the center */
+	background-position: center center; /* Align the image to the center */
 	background-repeat: no-repeat;
 }
 
@@ -100,7 +100,7 @@ label[for="3"]{
 	background-image: url("site.png");
 	background-size: 100% auto;
 	font-size: 2rem;
-	background-position: center /* Align the image to the center */
+	background-position: center center; /* Align the image to the center */
 	background-repeat: no-repeat;
 }
 
