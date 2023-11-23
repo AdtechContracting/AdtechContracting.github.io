@@ -180,7 +180,7 @@ html{
 
 /* Style the image */
 .image-container img {
-	max-width: 50%;
+	max-width: 100%;
 	height: auto;
 	object-fit: cover; 
 	align-items: center;
