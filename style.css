@@ -255,7 +255,7 @@ input[type="submit"]:hover {
 }
 
 .footer-basic li {
-  padding:0 5%;
+  padding:1rem 5%;
   display: inline-block;
 }
 
@@ -271,7 +271,6 @@ input[type="submit"]:hover {
 
 .footer-basic .social {
   text-align:center;
-  padding-bottom:1%;
 }
 
 .footer-basic .social > a {
@@ -293,7 +292,6 @@ input[type="submit"]:hover {
 }
 
 .footer-basic .copyright {
-  margin-top:0.5rem;
   text-align:center;
   font-size:1rem;
   color:var(--white);
