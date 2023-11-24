@@ -80,11 +80,6 @@ html{
   justify-content: space-around;
 }
 
-.centreImage img {
-  width: 15vw;
-  /*height: 200px;*/
-}
-
 .grid {
 	display: grid;
 	grid-template-rows: repeat(4, auto);
@@ -298,6 +293,10 @@ input[type="submit"]:hover {
 	font-size: 2rem;
 	font-weight: bold;
 }
+
+.centreImage img {
+  width: 80vw;
+}
 }
 
 @media (min-width: 1281px) {
@@ -358,5 +357,10 @@ input[type="submit"]:hover {
 	font-size: 1rem;
 	font-weight: normal;
 }
+
+.centreImage img {
+  width: 15vw;
+}
+	
 }
 
