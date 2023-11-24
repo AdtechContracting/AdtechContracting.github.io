@@ -252,11 +252,11 @@ input[type="submit"]:hover {
   font-size:1rem;
   line-height:1.6;
   margin-bottom:0;
-  display: inline-block;
 }
 
 .footer-basic li {
-  padding:0 10vw;
+  padding:0 5%;
+  display: inline-block;
 }
 
 .footer-basic ul a {
