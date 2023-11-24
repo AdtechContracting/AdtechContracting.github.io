@@ -240,7 +240,7 @@ input[type="submit"]:hover {
 }
 
 .footer-basic {
-  padding:2.5rem 0;
+  padding:1rem 0;
   background-color:var(--button);
   color:var(--white);
 }
@@ -252,6 +252,7 @@ input[type="submit"]:hover {
   font-size:1rem;
   line-height:1.6;
   margin-bottom:0;
+  display: inline-block;
 }
 
 .footer-basic li {
@@ -292,11 +293,12 @@ input[type="submit"]:hover {
 }
 
 .footer-basic .copyright {
-  margin-top:1rem;
+  margin-top:0.5rem;
   text-align:center;
   font-size:1rem;
   color:var(--white);
   margin-bottom:0;
+  font-weight: bold;
 }
 
 /* Add media queries for different screen sizes */
