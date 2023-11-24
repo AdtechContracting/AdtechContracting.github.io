@@ -238,11 +238,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: var(--button-hover);
 }
-
+    
 .footer-basic {
   padding:1rem 0;
   background-color:var(--button);
   color:var(--white);
+  margin-top: 1rem;
 }
 
 .footer-basic ul {
