@@ -34,6 +34,7 @@ label{
 	background-image: url("Images/Caro-01.png");
 	background-position: center center;/* Align the image to the center  */
 	background-repeat: no-repeat;
+	href: "Services1.html"
 }
 
 form {
@@ -92,6 +93,7 @@ label[for="2"]{
 	font-size: 2rem;
 	background-position: center center; /* Align the image to the center */
 	background-repeat: no-repeat;
+	href: "Services2.html"
 }
 
 label[for="3"]{
@@ -102,6 +104,7 @@ label[for="3"]{
 	font-size: 2rem;
 	background-position: center center; /* Align the image to the center */
 	background-repeat: no-repeat;
+	href: "Services3.html"
 }
 
 label:before,
