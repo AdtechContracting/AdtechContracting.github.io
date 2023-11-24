@@ -31,7 +31,7 @@ label{
 	background: var(--CarouselBG1);
 	background-size: 100% auto;
 	font-size: 2rem;
-	background-image: url("bigdrill2.png");
+	background-image: url("Images/Caro-01.png");
 	background-position: center center;/* Align the image to the center  */
 	background-repeat: no-repeat;
 }
@@ -87,7 +87,7 @@ input:nth-of-type(3):checked ~ label {
 label[for="2"]{
 /*label[calc(attr(for)%2=0)] {*/
 	background: var(--CarouselBG2);
-	background-image: url("fish.png");
+	background-image: url("Images/Caro-02.png");
 	background-size: 100% auto;
 	font-size: 2rem;
 	background-position: center center; /* Align the image to the center */
@@ -97,7 +97,7 @@ label[for="2"]{
 label[for="3"]{
 /*label[calc(attr(for)%2=0)] {*/
 	background: var(--CarouselBG2);
-	background-image: url("site.png");
+	background-image: url("Images/Caro-03.png");
 	background-size: 100% auto;
 	font-size: 2rem;
 	background-position: center center; /* Align the image to the center */
