@@ -359,6 +359,22 @@ input[type="submit"]:hover {
 }
 }
 
+.aboutService {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutService h2 {
+  text-align: center;
+}
+
+.aboutService p {
+  width: 80%;
+  text-align: center;
+}
+
 @media (min-width: 1281px) {
   /* For desktop devices, keep the navbar items horizontally */
   .navbar {
