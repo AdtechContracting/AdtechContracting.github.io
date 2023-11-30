@@ -73,6 +73,11 @@ html{
   text-align: center;
 }
 
+.about lip {
+  width: 80%;
+  text-align: center;
+}
+
 /* our story story */
 .centreImage {
   display: flex;
