@@ -246,6 +246,10 @@ textarea {
     margin-bottom: 15px;
 }
 
+textarea {
+    resize: vertical;
+}
+
 input[type="submit"] {
     background-color: var(--button);
     color: var(--white);;
