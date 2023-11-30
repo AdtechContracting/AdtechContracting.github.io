@@ -73,11 +73,27 @@ html{
   text-align: center;
 }
 
-.about lip {
-  width: 80%;
+.aboutService {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutService h2 {
   text-align: center;
 }
 
+.aboutService p {
+  width: 80%;
+  text-align: left;
+}
+
+.aboutService li {
+  width: 80%;
+  text-align: left;
+}
+	
 /* our story story */
 .centreImage {
   display: flex;
@@ -363,22 +379,6 @@ input[type="submit"]:hover {
 .centreImage img {
   width: 50vw;
 }
-}
-
-.aboutService {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.aboutService h2 {
-  text-align: center;
-}
-
-.aboutService p {
-  width: 80%;
-  text-align: left;
 }
 
 @media (min-width: 1281px) {
